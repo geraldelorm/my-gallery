@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* Main CSS */
+*,
+*::before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.img-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.img-area img {
+  width: 9.75rem;
+  height: 9.75rem;
+  border-radius: 1rem;
+}
+.img-area h2 {
+  margin: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.img-area p {
+  font-size: 0.875rem;
+}
+.stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stats-item {
+  margin: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #bdbdbd;
+  width: 6.3rem;
+  height: 4.2rem;
+  border-radius: 0.4rem;
+}
+.stats-item h1 {
+  font-size: 1.1rem;
+}
+.stats-item p {
+  font-size: 0.7rem;
+}
+
+figure img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}
+
+.grid-parent {
+  margin: 2rem 0;
+}
+/* FOOTER */
+footer p {
+  margin: 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+}
+footer p a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .img-area img {
+    width: 5.75rem;
+    height: 5.75rem;
+  }
+  .img-area h2 {
+    font-size: 1rem;
+  }
+  .img-area p {
+    font-size: 0.6rem;
+  }
+
+  .stats-item {
+    width: 5rem;
+    height: 3rem;
+    margin: 1rem 0.5rem;
+  }
+  .stats-item h1 {
+    font-size: 0.9rem;
+  }
+  .stats-item p {
+    font-size: 0.5rem;
+  }
+}
+@media (max-width: 330px) {
+  .img-area img {
+    width: 5rem;
+    height: 5rem;
+  }
+  .img-area h2 {
+    margin: 0.5rem;
+    font-size: 1rem;
+  }
+  .img-area p {
+    font-size: 0.6rem;
+  }
+
+  .stats-item {
+    width: 4rem;
+    height: 2rem;
+    margin: 1rem 0.3rem;
+  }
+  .stats-item h1 {
+    font-size: 0.7rem;
+  }
+  .stats-item p {
+    font-size: 0.4rem;
+  }
+}
